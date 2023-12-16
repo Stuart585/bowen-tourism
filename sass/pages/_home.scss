@@ -6,16 +6,25 @@
 
 .section-features {
     padding: 20rem 0;
-    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)) , url(../img/nat-4.jpg);
+    background-image: linear-gradient(to right bottom, rgba(white, 0.5), rgba(orangered, 0.5)) , url(../img/bowen-2.jpg);
     background-size: cover;
-    transform: skewY(-7deg);
     margin-top: -10rem;
+    position: relative;
 
+    &__wave-top {
+        position: absolute;
+        top: -1px;
+        left: 0;
+        transform: scale(-1);
+    }
 
-    & > * {
-        transform: skewY(7deg);
-    };
+    &__wave-bottom {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+    }
 }
+
 
 .section-tours {
     padding: 25rem 0 15rem 0;

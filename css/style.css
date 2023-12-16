@@ -43,7 +43,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(to right, #ffb900, #ff7730);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -173,12 +173,13 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform .3s; }
+  transition: transform .3s;
+  z-index: 50; }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    background-image: linear-gradient(to right, #ffb900, #ff7730);
     -webkit-background-clip: text;
     color: transparent; }
   .feature-box:hover {
@@ -221,11 +222,11 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/rose_bay_1.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/whitsunday-sands-1.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/horseshoe-bay-1.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -275,21 +276,28 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  .card__icon {
+    font-size: 8rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    color: white; }
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(0, 0, 255, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 69, 0, 0.8)), url(../img/bowen-1.jpg);
   background-size: cover;
   background-position: top;
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  position: relative; }
   .header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+  .header__wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0; }
 
 .row {
   max-width: 114rem;
@@ -361,12 +369,19 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 69, 0, 0.5)), url(../img/bowen-2.jpg);
   background-size: cover;
-  transform: skewY(-7deg);
-  margin-top: -10rem; }
-  .section-features > * {
-    transform: skewY(7deg); }
+  margin-top: -10rem;
+  position: relative; }
+  .section-features__wave-top {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    transform: scale(-1); }
+  .section-features__wave-bottom {
+    position: absolute;
+    bottom: -1px;
+    left: 0; }
 
 .section-tours {
   padding: 25rem 0 15rem 0;
