@@ -1,12 +1,9 @@
 .header {
     height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba(white, 0.5), rgba(orangered, 0.8)) , url(../img/bowen-1.jpg);
+    background-image: linear-gradient(to right bottom, rgba(rgb(84, 173, 214), 0.5), rgba(orangered, 0.5)) , url(../img/bowen-phone-1.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     position: relative;
-
-    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
     &__text-box {
         position: absolute;
@@ -15,16 +12,6 @@
         transform: translate(-50%, -50%);
         text-align: center;
     }
-
-    // &__logo-box{
-    //     position: absolute;
-    //     top: 4rem;
-    //     left: 4rem;
-    // }
-
-    // &__logo {
-    //     height: 3.5rem;
-    // }
 
     &__wave {
         position: absolute;
