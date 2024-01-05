@@ -5,6 +5,12 @@
     background-position: bottom;
     position: relative;
 
+    @include respond(phone){
+        height: 55vh;
+        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+        // clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+     };
+
     &__text-box {
         position: absolute;
         top: 40%;
