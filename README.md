@@ -1,4 +1,4 @@
-# Personal Developer Page
+# Bowen Tourism Website
 
 A promotional website for my home town back in Australia.
 
