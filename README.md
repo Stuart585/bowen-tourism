@@ -3,5 +3,5 @@
 A promotional website for my home town back in Australia.
 
 # Live site
-https://www.tourismbowen.stuartbarker.net
+https://d1634cnucrbosm.cloudfront.net/
 
